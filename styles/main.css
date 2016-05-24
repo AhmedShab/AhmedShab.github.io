@@ -25,6 +25,16 @@ body {
     src: url(/fonts/kg-blank-space.olid.ttf);
 }
 
+@font-face {
+    font-family: crayon;
+    src: url(/fonts/DK-Cool-Crayon.ttf);
+}
+
+@font-face {
+    font-family: blzee;
+    src: url(/fonts/blzee.regular.ttf);
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -74,7 +84,7 @@ h3 {
 }
 
 p {
-  font-family: squeaky-chawp;
+  font-family: crayon;
   font-size: 20px;
   color: #FFFFFF;
 }
