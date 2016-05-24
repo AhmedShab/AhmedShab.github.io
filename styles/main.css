@@ -2,10 +2,27 @@
 outline: 1px solid red !important;
 }*/
 
+/*no-repeat scroll center top transparent;*/
 body {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("/images/background.jpg");
+  background: url("/images/background.jpg") no-repeat scroll center top transparent;
+  height: 100px;
+}
+
+
+@font-face {
+    font-family: squeaky-chalk;
+    src: url(/fonts/squeaky-chalk-sound.regular.ttf);
+}
+
+@font-face {
+    font-family: squeaky-chawp;
+    src: url(/fonts/chawp.regular.ttf);
+}
+
+
+@font-face {
+    font-family: kg-blank-space;
+    src: url(/fonts/kg-blank-space.olid.ttf);
 }
 
 .container {
@@ -41,21 +58,23 @@ body {
 
 h1{
   color: #FFFFFF;
+  font-family: squeaky-chalk;
+
 }
 
 h2 {
-  font-family: sans-serif;
+  font-family: squeaky-chawp;
   color: #FFFFFF;
 }
 
 h3 {
-  font-family: sans-serif;
+  font-family: squeaky-chawp;
   font-size: 22px;
   color: #FFFFFF;
 }
 
 p {
-  font-family: sans-serif;
+  font-family: squeaky-chawp;
   font-size: 20px;
   color: #FFFFFF;
 }
@@ -72,4 +91,5 @@ footer p {
 
 a {
   color: #9AE8D4;
+  font-family: kg-blank-space;
 }
