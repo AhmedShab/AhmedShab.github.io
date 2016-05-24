@@ -3,10 +3,9 @@ outline: 1px solid red !important;
 }*/
 
 body {
-  background-color: #F8F8F8;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("http://www.ngepluk.com/p/school-board-wallpaper-free-jlf.jpg");
+  background-image: url("/images/background.jpg");
 }
 
 .container {
@@ -59,6 +58,16 @@ p {
   font-family: sans-serif;
   font-size: 20px;
   color: #FFFFFF;
+}
+
+footer p {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 a {
