@@ -71,6 +71,17 @@ html {
 .html-css-dom-content{
   max-width: 50%;
 }
+.t2-question-1, .t2-question-2, .t2-question-3 {
+  max-width: 50%;
+}
+
+.t2-question-1 img {
+  width: 100%;
+}
+
+.t2-question-3 img {
+  margin-left: 40%;
+}
 
 h1{
   color: #FFFFFF;
@@ -93,6 +104,11 @@ p {
   font-family: crayon;
   font-size: 20px;
   color: #FFFFFF;
+}
+
+.home-page {
+  margin-right: 60%;
+  color: #4CBD7B;
 }
 
 footer {
