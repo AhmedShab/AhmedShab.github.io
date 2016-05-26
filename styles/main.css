@@ -71,7 +71,8 @@ html {
 .html-css-dom-content{
   max-width: 50%;
 }
-.t2-question-1, .t2-question-2, .t2-question-3 {
+.t2-question-1, .t2-question-2, .t2-question-3
+.c2-question-1, .c2-question-2{
   max-width: 50%;
 }
 
@@ -100,7 +101,7 @@ h3 {
   color: #FFFFFF;
 }
 
-p {
+p, pr {
   font-family: crayon;
   font-size: 20px;
   color: #FFFFFF;
