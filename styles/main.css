@@ -76,6 +76,10 @@ html {
   max-width: 50%;
 }
 
+.t2-question-1 b {
+  color: #860808;
+}
+
 .t2-question-1 img {
   width: 100%;
 }
