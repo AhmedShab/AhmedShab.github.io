@@ -56,7 +56,7 @@
 
 	var _reactRouter = __webpack_require__(159);
 
-	var _Home = __webpack_require__(210);
+	var _Home = __webpack_require__(206);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
@@ -68,19 +68,19 @@
 
 	var _c1ReflectionBlog2 = _interopRequireDefault(_c1ReflectionBlog);
 
-	var _c1TimeAndHabitsBlog = __webpack_require__(211);
+	var _c1TimeAndHabitsBlog = __webpack_require__(210);
 
 	var _c1TimeAndHabitsBlog2 = _interopRequireDefault(_c1TimeAndHabitsBlog);
 
-	var _t2HtmlCssDomP = __webpack_require__(212);
+	var _t2HtmlCssDomP = __webpack_require__(211);
 
 	var _t2HtmlCssDomP2 = _interopRequireDefault(_t2HtmlCssDomP);
 
-	var _t2HtmlCssDomP3 = __webpack_require__(213);
+	var _t2HtmlCssDomP3 = __webpack_require__(212);
 
 	var _t2HtmlCssDomP4 = _interopRequireDefault(_t2HtmlCssDomP3);
 
-	var _c2EmotionalIntelligence = __webpack_require__(214);
+	var _c2EmotionalIntelligence = __webpack_require__(213);
 
 	var _c2EmotionalIntelligence2 = _interopRequireDefault(_c2EmotionalIntelligence);
 
@@ -90,7 +90,7 @@
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
-	  { history: _reactRouter.HashHistory },
+	  { history: _reactRouter.hashHistory },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: "/", component: _Layout2.default },
@@ -24045,7 +24045,128 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 206 */,
+/* 206 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Home = function (_React$Component) {
+	  _inherits(Home, _React$Component);
+
+	  function Home() {
+	    _classCallCheck(this, Home);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Home).apply(this, arguments));
+	  }
+
+	  _createClass(Home, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "main-page-content" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "My 19 weeks journey towards becoming a successful web developer: Ahmed Shaaban"
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "This is my weekly blog that I will be sharing my experince toward working on becoming a successful web developer."
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "May 27, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c2-emotional-intelligence" },
+	            "Cultural blog"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "May 26, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/t2-html-css-dom-p2" },
+	            "Technical blog part 2"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "May 24, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/t2-html-css-dom-p1" },
+	            "Technical blog part 1"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "May 19, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c1-reflection-blog" },
+	            "Reflaction blog"
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c1-time-and-habits-blog" },
+	            "Time and habits blog"
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Home;
+	}(_react2.default.Component);
+
+	exports.default = Home;
+
+/***/ },
 /* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -24196,6 +24317,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(159);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24218,7 +24341,12 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "reflaction-content" },
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
 	        _react2.default.createElement(
 	          "h2",
 	          null,
@@ -24284,128 +24412,6 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Home = function (_React$Component) {
-	  _inherits(Home, _React$Component);
-
-	  function Home() {
-	    _classCallCheck(this, Home);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Home).apply(this, arguments));
-	  }
-
-	  _createClass(Home, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "main-page-content" },
-	        _react2.default.createElement(
-	          "h1",
-	          null,
-	          "My 19 weeks journey towards becoming a successful web developer: Ahmed Shaaban"
-	        ),
-	        _react2.default.createElement(
-	          "h3",
-	          null,
-	          "This is my weekly blog that I will be sharing my experince toward working on becoming a successful web developer."
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "blog" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "May 27, 2016"
-	          ),
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: "blog/c2-emotional-intelligence" },
-	            "Cultural blog"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "blog" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "May 26, 2016"
-	          ),
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: "blog/t2-html-css-dom-p2" },
-	            "Technical blog part 2"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "blog" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "May 24, 2016"
-	          ),
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: "blog/t2-html-css-dom-p1" },
-	            "Technical blog part 1"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "blog" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "May 19, 2016"
-	          ),
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: "blog/c1-reflection-blog" },
-	            "Reflaction blog"
-	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: "blog/c1-time-and-habits-blog" },
-	            "Time and habits blog"
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Home;
-	}(_react2.default.Component);
-
-	exports.default = Home;
-
-/***/ },
-/* 211 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(159);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 	var C1TimeAndHabitsBlog = function (_React$Component) {
 	  _inherits(C1TimeAndHabitsBlog, _React$Component);
 
@@ -24420,40 +24426,36 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        null,
+	        { className: "page-content" },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "page-content" },
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: "/", className: "home-page" },
-	            _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
-	          ),
-	          _react2.default.createElement(
-	            "h2",
-	            null,
-	            "Timebox and habits techniques"
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "While reading the articles I set myslef a time to go through them. Even when I wasn't quite done, I moved on to work on another task."
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "I really liked the Fogg Method and would be very interested to try it out myself starting from tomorrow."
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "I haven't tried any of them yet but would really want to start the Fogg method soon and apply it to my everyday life."
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "There are two techniques I want to apply to my everday life, creating habits and fixed Mindset. I like what Charles Duhigg said about you have to show your behavoir first then the attitude will follow (\"Display your ability first. Prove it to yourself and then you’ll believe it.\")."
-	          )
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Timebox and habits techniques"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "While reading the articles I set myslef a time to go through them. Even when I wasn't quite done, I moved on to work on another task."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I really liked the Fogg Method and would be very interested to try it out myself starting from tomorrow."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I haven't tried any of them yet but would really want to start the Fogg method soon and apply it to my everyday life."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "There are two techniques I want to apply to my everday life, creating habits and fixed Mindset. I like what Charles Duhigg said about you have to show your behavoir first then the attitude will follow (\"Display your ability first. Prove it to yourself and then you’ll believe it.\")."
 	        )
 	      );
 	    }
@@ -24465,7 +24467,7 @@
 	exports.default = C1TimeAndHabitsBlog;
 
 /***/ },
-/* 212 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24571,7 +24573,7 @@
 	exports.default = T2TechnicalBlogP1;
 
 /***/ },
-/* 213 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24668,7 +24670,7 @@
 	exports.default = T2TechnicalBlogP2;
 
 /***/ },
-/* 214 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
