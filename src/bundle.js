@@ -56,13 +56,33 @@
 
 	var _reactRouter = __webpack_require__(159);
 
-	var _Blogs = __webpack_require__(206);
+	var _Home = __webpack_require__(210);
 
-	var _Blogs2 = _interopRequireDefault(_Blogs);
+	var _Home2 = _interopRequireDefault(_Home);
 
 	var _Layout = __webpack_require__(207);
 
 	var _Layout2 = _interopRequireDefault(_Layout);
+
+	var _c1ReflectionBlog = __webpack_require__(209);
+
+	var _c1ReflectionBlog2 = _interopRequireDefault(_c1ReflectionBlog);
+
+	var _c1TimeAndHabitsBlog = __webpack_require__(211);
+
+	var _c1TimeAndHabitsBlog2 = _interopRequireDefault(_c1TimeAndHabitsBlog);
+
+	var _t2HtmlCssDomP = __webpack_require__(212);
+
+	var _t2HtmlCssDomP2 = _interopRequireDefault(_t2HtmlCssDomP);
+
+	var _t2HtmlCssDomP3 = __webpack_require__(213);
+
+	var _t2HtmlCssDomP4 = _interopRequireDefault(_t2HtmlCssDomP3);
+
+	var _c2EmotionalIntelligence = __webpack_require__(214);
+
+	var _c2EmotionalIntelligence2 = _interopRequireDefault(_c2EmotionalIntelligence);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -74,7 +94,12 @@
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: "/", component: _Layout2.default },
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Blogs2.default })
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c1-reflection-blog", component: _c1ReflectionBlog2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c1-time-and-habits-blog", component: _c1TimeAndHabitsBlog2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t2-html-css-dom-p1", component: _t2HtmlCssDomP2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t2-html-css-dom-p2", component: _t2HtmlCssDomP4.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c2-emotional-intelligence", component: _c2EmotionalIntelligence2.default })
 	  )
 	), app);
 
@@ -24020,129 +24045,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 206 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Blog = function (_React$Component) {
-	  _inherits(Blog, _React$Component);
-
-	  function Blog() {
-	    _classCallCheck(this, Blog);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Blog).apply(this, arguments));
-	  }
-
-	  _createClass(Blog, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        null,
-	        _react2.default.createElement(
-	          "div",
-	          { className: "blog" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "May 27, 2016"
-	          ),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "blog/c2-emotional-intelligence.html" },
-	            "Cultural blog"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "blog" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "May 26, 2016"
-	          ),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "blog/t2-html-css-dom-p2.html" },
-	            "Technical blog part 2"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "blog" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "May 26, 2016"
-	          ),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "blog/t2-html-css-dom-p2.html" },
-	            "Technical blog part 2"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "blog" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "May 24, 2016"
-	          ),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "blog/t2-html-css-dom-p1.html" },
-	            "Technical blog part 1"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "blog" },
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "May 19, 2016"
-	          ),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "/blog/c1-reflection-blog.html" },
-	            "Reflaction blog"
-	          ),
-	          _react2.default.createElement(
-	            "a",
-	            { href: "/blog/c1-time-and-habits-blog.html" },
-	            "Time and habits blog"
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Blog;
-	}(_react2.default.Component);
-
-	exports.default = Blog;
-
-/***/ },
+/* 206 */,
 /* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -24189,20 +24092,6 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "container" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "main-page-content" },
-	          _react2.default.createElement(
-	            "h1",
-	            null,
-	            "My 19 weeks journey towards becoming a successful web developer: Ahmed Shaaban"
-	          ),
-	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "This is my weekly blog that I will be sharing my experince toward working on becoming a successful web developer."
-	          )
-	        ),
 	        this.props.children,
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
@@ -24290,6 +24179,592 @@
 	}(_react2.default.Component);
 
 	exports.default = Footer;
+
+/***/ },
+/* 209 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var C1ReflectionBlog = function (_React$Component) {
+	  _inherits(C1ReflectionBlog, _React$Component);
+
+	  function C1ReflectionBlog() {
+	    _classCallCheck(this, C1ReflectionBlog);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(C1ReflectionBlog).apply(this, arguments));
+	  }
+
+	  _createClass(C1ReflectionBlog, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "reflaction-content" },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "My reflaction on the EDA experience"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "After watching Shereef's Fireside Chat, I was very inspired. It's very inspiring and I fully support the way that EDA is approching to create developers not just by learning technology, but also how to work in a team, being a part of that team and as they as \"if you want to go fast, go alone. If you want to go far, go together\"."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I like what Shereef said about what makes EDA different from the formal education. When we go to schools/univerites, we go there expecting it as a package. We might like it, we might even be forced to do it and hate it. At EDA, you are here because you want to be here. You want to find something your're passionate about and you want to be in an environment where you have a support of people like yourself. Enjoy what you learn and don't get frustrated because everyone can learn new things."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Engaging to this type culture is what made me excited. Not to just to impove my technical skills, but also because of the culture. I couldn't wait to start when I enrolled few weeks ago and now I'm very ready to go all the way and enjoy it to the full extent."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "My expectations haven't changed at all. In fact, it made me even more excited and I'm looking forward to work on more challenges and figure things out with my team."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I'm very excited to be in this environment. I might be a little nervous but that's okay, I want to lean to impove myself and when I start working I won't be as nervous as I might be."
+	        )
+	      );
+	    }
+	  }]);
+
+	  return C1ReflectionBlog;
+	}(_react2.default.Component);
+
+	exports.default = C1ReflectionBlog;
+
+/***/ },
+/* 210 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Home = function (_React$Component) {
+	  _inherits(Home, _React$Component);
+
+	  function Home() {
+	    _classCallCheck(this, Home);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Home).apply(this, arguments));
+	  }
+
+	  _createClass(Home, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "main-page-content" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "My 19 weeks journey towards becoming a successful web developer: Ahmed Shaaban"
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "This is my weekly blog that I will be sharing my experince toward working on becoming a successful web developer."
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "May 27, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c2-emotional-intelligence" },
+	            "Cultural blog"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "May 26, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/t2-html-css-dom-p2" },
+	            "Technical blog part 2"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "May 24, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/t2-html-css-dom-p1" },
+	            "Technical blog part 1"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "May 19, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c1-reflection-blog" },
+	            "Reflaction blog"
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c1-time-and-habits-blog" },
+	            "Time and habits blog"
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Home;
+	}(_react2.default.Component);
+
+	exports.default = Home;
+
+/***/ },
+/* 211 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var C1TimeAndHabitsBlog = function (_React$Component) {
+	  _inherits(C1TimeAndHabitsBlog, _React$Component);
+
+	  function C1TimeAndHabitsBlog() {
+	    _classCallCheck(this, C1TimeAndHabitsBlog);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(C1TimeAndHabitsBlog).apply(this, arguments));
+	  }
+
+	  _createClass(C1TimeAndHabitsBlog, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "page-content" },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "/", className: "home-page" },
+	            _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Timebox and habits techniques"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "While reading the articles I set myslef a time to go through them. Even when I wasn't quite done, I moved on to work on another task."
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "I really liked the Fogg Method and would be very interested to try it out myself starting from tomorrow."
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "I haven't tried any of them yet but would really want to start the Fogg method soon and apply it to my everyday life."
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "There are two techniques I want to apply to my everday life, creating habits and fixed Mindset. I like what Charles Duhigg said about you have to show your behavoir first then the attitude will follow (\"Display your ability first. Prove it to yourself and then you’ll believe it.\")."
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return C1TimeAndHabitsBlog;
+	}(_react2.default.Component);
+
+	exports.default = C1TimeAndHabitsBlog;
+
+/***/ },
+/* 212 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var T2TechnicalBlogP1 = function (_React$Component) {
+	  _inherits(T2TechnicalBlogP1, _React$Component);
+
+	  function T2TechnicalBlogP1() {
+	    _classCallCheck(this, T2TechnicalBlogP1);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(T2TechnicalBlogP1).apply(this, arguments));
+	  }
+
+	  _createClass(T2TechnicalBlogP1, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "html-css-dom-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "question-one" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "I was trying to think of a different way to describe it but I believe the house analogy is the best.",
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement("br", null),
+	            "You can think of the HTML as the house footprint. A house has rooms, kitchen bathroom and so on. The same thing here applies to HTML elements (e.g: body, div, h ... etc). It allows us to build the house with different features and how the house looks like.",
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement("br", null),
+	            "CSS is more like taken the house you built with your HTML and paint it with different colors. You can choose what color you want your room or if you like to have the same color to all your rooms, you can do that as well.",
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement("br", null),
+	            "The DOM could be (this might not be the best analogy) a building from top to bottom. You can't go the top floor without going through the floors in between. That's the same thing when you view a website. The layout of a website starts from top to button of a page."
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "question-two" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "What is meant by boxifying design?"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "It means that you take an entire web page and draw boxes around each element of the HTML. Think of a web page as a block of boxes, you can break it down to several boxes to define each element in the DOM."
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "question-three" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "What is the box model?"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "As we know, every HTML element is considered as a box. Well, box model is how we describe the design and layout of the element. They have hidden attributes that contain margins, borders, padding, and the actual content."
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return T2TechnicalBlogP1;
+	}(_react2.default.Component);
+
+	exports.default = T2TechnicalBlogP1;
+
+/***/ },
+/* 213 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var T2TechnicalBlogP2 = function (_React$Component) {
+	  _inherits(T2TechnicalBlogP2, _React$Component);
+
+	  function T2TechnicalBlogP2() {
+	    _classCallCheck(this, T2TechnicalBlogP2);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(T2TechnicalBlogP2).apply(this, arguments));
+	  }
+
+	  _createClass(T2TechnicalBlogP2, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "What is grid based design?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "We can imagine web page is divided into rows and columns. An entire row with the full width of the page has 12 columns. This way, it's much easier to have a well-organized layout for users rather than having a little piece of a page all over the place.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "You can see below the diagram of a column layout on a page.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null)
+	        ),
+	        _react2.default.createElement("img", { src: "/images/grid-system.png", alt: "" }),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Whats all the hype about responsive webpages?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Nowadays, we don't just have one size of a screen. That created few problems for designing a webpage. Because we can't know exactly how big or small the screen that users will be using, we can't use pixel to change ever single size. Thus, having responsive webpages will change the layout biased on the type of screen you have."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "What is semantic structure?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I will try to explain this as clear as I can (sometimes it's hard to explain those things). We can think of Semantic structure as the order of importance in a webpage. For example, we have a title which is important detail about the page so we use h1 tag. For less important details, we can use  h2, h3 or h4. Therefore, These elements structured based on the specific order.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "I found this diagram that could be helpful to illustrate what I mean. ",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null)
+	        ),
+	        _react2.default.createElement("img", { src: "/images/semantic-elements.png", alt: "" })
+	      );
+	    }
+	  }]);
+
+	  return T2TechnicalBlogP2;
+	}(_react2.default.Component);
+
+	exports.default = T2TechnicalBlogP2;
+
+/***/ },
+/* 214 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var C2ReflectionBlog = function (_React$Component) {
+	  _inherits(C2ReflectionBlog, _React$Component);
+
+	  function C2ReflectionBlog() {
+	    _classCallCheck(this, C2ReflectionBlog);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(C2ReflectionBlog).apply(this, arguments));
+	  }
+
+	  _createClass(C2ReflectionBlog, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "t2-question-1" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "What learnings did you take from the chapter?"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "If I want to summrize it in few words, I would say that our mind is very hard to understand. At the same time, this enforced me to be more aware of how we think and behave.",
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement("br", null),
+	            "Happiness is an important mindset. Being happy allows us to focus on the task as it's the default state of our mind. If you're happy, you are most likely a calm person.",
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement("br", null),
+	            "I have to share this wonderful quotes, it caught my attention:",
+	            _react2.default.createElement(
+	              "b",
+	              null,
+	              "\"Breathing as if your life depends on it\""
+	            ),
+	            " -Jon Kabat-Zinn"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "c2-question-2" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "How did you find the two minutes of mindfulness?"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "It was wonderful exrice to do. I tried it in the morning and it's incredible. As we are busy with our lives (working or doing whatever makes us busy and even stressed about few things), it's incredible how we easily we can escape our problems for a few minutes.",
+	            _react2.default.createElement("br", null),
+	            "It's worth making it a habit every morning. Releasing yourself for all the troubles and worries you have makes you happier and have a productive day overall.",
+	            _react2.default.createElement("br", null),
+	            "I have been doing some kind of meditation every moring after breakfast and must admit, it makes my day much better."
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return C2ReflectionBlog;
+	}(_react2.default.Component);
+
+	exports.default = C2ReflectionBlog;
 
 /***/ }
 /******/ ]);
