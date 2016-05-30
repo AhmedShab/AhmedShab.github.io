@@ -58,20 +58,43 @@ html {
 }
 
 .main-page-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
+
 
 .reflaction-content{
   max-width: 50%;
 }
 
 .time-habits-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.time-habits-content > * {
   max-width: 50%;
+}
+
+.page-content > * {
+  max-width: 50%;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 .html-css-dom-content{
   max-width: 50%;
 }
-.t2-question-1, .t2-question-2, .t2-question-3
+.t2-question-1, .t2-question-2, .t2-question-3,
 .c2-question-1, .c2-question-2{
   max-width: 50%;
 }
@@ -119,6 +142,9 @@ p, pr {
 footer {
   font-size: 1.5em;
 
+}
+footer p a{
+  padding: 10px;
 }
 
 a {
