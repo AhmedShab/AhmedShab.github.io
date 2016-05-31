@@ -56,33 +56,37 @@
 
 	var _reactRouter = __webpack_require__(159);
 
-	var _Home = __webpack_require__(207);
+	var _Home = __webpack_require__(206);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Layout = __webpack_require__(208);
+	var _Layout = __webpack_require__(207);
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
-	var _c1ReflectionBlog = __webpack_require__(210);
+	var _c1ReflectionBlog = __webpack_require__(209);
 
 	var _c1ReflectionBlog2 = _interopRequireDefault(_c1ReflectionBlog);
 
-	var _c1TimeAndHabitsBlog = __webpack_require__(211);
+	var _c1TimeAndHabitsBlog = __webpack_require__(210);
 
 	var _c1TimeAndHabitsBlog2 = _interopRequireDefault(_c1TimeAndHabitsBlog);
 
-	var _t2HtmlCssDomP = __webpack_require__(212);
+	var _t2HtmlCssDomP = __webpack_require__(211);
 
 	var _t2HtmlCssDomP2 = _interopRequireDefault(_t2HtmlCssDomP);
 
-	var _t2HtmlCssDomP3 = __webpack_require__(213);
+	var _t2HtmlCssDomP3 = __webpack_require__(212);
 
 	var _t2HtmlCssDomP4 = _interopRequireDefault(_t2HtmlCssDomP3);
 
-	var _c2EmotionalIntelligence = __webpack_require__(214);
+	var _c2EmotionalIntelligence = __webpack_require__(213);
 
 	var _c2EmotionalIntelligence2 = _interopRequireDefault(_c2EmotionalIntelligence);
+
+	var _blogTemplate = __webpack_require__(214);
+
+	var _blogTemplate2 = _interopRequireDefault(_blogTemplate);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -94,11 +98,13 @@
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: "/", component: _Layout2.default },
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c1-reflection-blog", component: _c1ReflectionBlog2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c1-time-and-habits-blog", component: _c1TimeAndHabitsBlog2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t2-html-css-dom-p1", component: _t2HtmlCssDomP2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t2-html-css-dom-p2", component: _t2HtmlCssDomP4.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c2-emotional-intelligence", component: _c2EmotionalIntelligence2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c2-emotional-intelligence", component: _c2EmotionalIntelligence2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/blog-template", component: _blogTemplate2.default })
 	  )
 	), app);
 
@@ -24044,8 +24050,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 206 */,
-/* 207 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24084,7 +24089,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "main-page-content" },
+	        { className: "page-content" },
 	        _react2.default.createElement(
 	          "h1",
 	          null,
@@ -24167,7 +24172,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 208 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24184,7 +24189,7 @@
 
 	var _reactRouter = __webpack_require__(159);
 
-	var _Footer = __webpack_require__(209);
+	var _Footer = __webpack_require__(208);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -24212,7 +24217,7 @@
 
 	      return _react2.default.createElement(
 	        "div",
-	        null,
+	        { className: "container" },
 	        this.props.children
 	      );
 	    }
@@ -24224,7 +24229,7 @@
 	exports.default = Layout;
 
 /***/ },
-/* 209 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24301,7 +24306,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 210 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24386,7 +24391,7 @@
 	exports.default = C1ReflectionBlog;
 
 /***/ },
-/* 211 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24466,7 +24471,7 @@
 	exports.default = C1TimeAndHabitsBlog;
 
 /***/ },
-/* 212 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24572,7 +24577,7 @@
 	exports.default = T2TechnicalBlogP1;
 
 /***/ },
-/* 213 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24669,7 +24674,7 @@
 	exports.default = T2TechnicalBlogP2;
 
 /***/ },
-/* 214 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24766,6 +24771,53 @@
 	}(_react2.default.Component);
 
 	exports.default = C2ReflectionBlog;
+
+/***/ },
+/* 214 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Template = function (_React$Component) {
+	  _inherits(Template, _React$Component);
+
+	  function Template() {
+	    _classCallCheck(this, Template);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Template).apply(this, arguments));
+	  }
+
+	  _createClass(Template, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement("div", null);
+	    }
+	  }]);
+
+	  return Template;
+	}(_react2.default.Component);
+
+	exports.default = Template;
 
 /***/ }
 /******/ ]);
