@@ -56,31 +56,31 @@
 
 	var _reactRouter = __webpack_require__(159);
 
-	var _Home = __webpack_require__(206);
+	var _Home = __webpack_require__(207);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Layout = __webpack_require__(207);
+	var _Layout = __webpack_require__(208);
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
-	var _c1ReflectionBlog = __webpack_require__(209);
+	var _c1ReflectionBlog = __webpack_require__(210);
 
 	var _c1ReflectionBlog2 = _interopRequireDefault(_c1ReflectionBlog);
 
-	var _c1TimeAndHabitsBlog = __webpack_require__(210);
+	var _c1TimeAndHabitsBlog = __webpack_require__(211);
 
 	var _c1TimeAndHabitsBlog2 = _interopRequireDefault(_c1TimeAndHabitsBlog);
 
-	var _t2HtmlCssDomP = __webpack_require__(211);
+	var _t2HtmlCssDomP = __webpack_require__(212);
 
 	var _t2HtmlCssDomP2 = _interopRequireDefault(_t2HtmlCssDomP);
 
-	var _t2HtmlCssDomP3 = __webpack_require__(212);
+	var _t2HtmlCssDomP3 = __webpack_require__(213);
 
 	var _t2HtmlCssDomP4 = _interopRequireDefault(_t2HtmlCssDomP3);
 
-	var _c2EmotionalIntelligence = __webpack_require__(213);
+	var _c2EmotionalIntelligence = __webpack_require__(214);
 
 	var _c2EmotionalIntelligence2 = _interopRequireDefault(_c2EmotionalIntelligence);
 
@@ -90,11 +90,10 @@
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
-	  { history: _reactRouter.hashHistory },
+	  { history: _reactRouter.browserHistory },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: "/", component: _Layout2.default },
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c1-reflection-blog", component: _c1ReflectionBlog2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c1-time-and-habits-blog", component: _c1TimeAndHabitsBlog2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t2-html-css-dom-p1", component: _t2HtmlCssDomP2.default }),
@@ -24045,7 +24044,8 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 206 */
+/* 206 */,
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24167,7 +24167,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 207 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24184,7 +24184,7 @@
 
 	var _reactRouter = __webpack_require__(159);
 
-	var _Footer = __webpack_require__(208);
+	var _Footer = __webpack_require__(209);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -24212,9 +24212,8 @@
 
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "container" },
-	        this.props.children,
-	        _react2.default.createElement(_Footer2.default, null)
+	        null,
+	        this.props.children
 	      );
 	    }
 	  }]);
@@ -24225,7 +24224,7 @@
 	exports.default = Layout;
 
 /***/ },
-/* 208 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24302,7 +24301,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 209 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24387,7 +24386,7 @@
 	exports.default = C1ReflectionBlog;
 
 /***/ },
-/* 210 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24467,7 +24466,7 @@
 	exports.default = C1TimeAndHabitsBlog;
 
 /***/ },
-/* 211 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24573,7 +24572,7 @@
 	exports.default = T2TechnicalBlogP1;
 
 /***/ },
-/* 212 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24670,7 +24669,7 @@
 	exports.default = T2TechnicalBlogP2;
 
 /***/ },
-/* 213 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

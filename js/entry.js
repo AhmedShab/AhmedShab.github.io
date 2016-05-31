@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute, hashHistory } from "react-router"
+import { Router, Route, IndexRoute, browserHistory } from "react-router"
 
 import Home from "./pages/Home";
 import Layout from "./pages/Layout";
@@ -13,9 +13,9 @@ import C2ReflectionBlog from "./pages/blogs/c2-emotional-intelligence";
 const app = document.getElementById('app');
 
 ReactDOM.render(
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={Layout}>
-      <IndexRoute component={Home}></IndexRoute>
+      {/*<IndexRoute component={Home}></IndexRoute>*/}
       <Route path="blog/c1-reflection-blog" component={C1ReflectionBlog}></Route>
       <Route path="blog/c1-time-and-habits-blog" component={C1TimeAndHabitsBlog}></Route>
       <Route path="blog/t2-html-css-dom-p1" component={T2TechnicalBlogP1}></Route>
