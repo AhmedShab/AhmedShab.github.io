@@ -24089,7 +24089,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "page-content" },
+	        { className: "main-page-content" },
 	        _react2.default.createElement(
 	          "h1",
 	          null,
@@ -24218,7 +24218,8 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "container" },
-	        this.props.children
+	        this.props.children,
+	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
 	  }]);
@@ -24510,7 +24511,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "html-css-dom-content" },
+	        { className: "page-content" },
 	        _react2.default.createElement(
 	          _reactRouter.Link,
 	          { to: "/", className: "home-page" },

@@ -9,6 +9,7 @@ export default class Layout extends React.Component {
     return (
         <div class="container">
           {this.props.children}
+          <Footer/>
       </div>
     );
   }
