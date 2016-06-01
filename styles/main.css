@@ -1,7 +1,6 @@
 /** {
 border: 1px solid red !important;
 }
-
 * {
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
@@ -10,10 +9,12 @@ box-sizing: border-box;
 }*/
 
 /*no-repeat scroll center top transparent;*/
-html {
-  background-image: url("/images/background.jpg");
+body {
+  /*background-image: url("/images/background.jpg");
   background-repeat:no-repeat;
-  background-size:cover;
+  background-size:cover;*/
+  background-color: #fafbfc;
+
 }
 
 
@@ -43,7 +44,7 @@ html {
   src: url(/fonts/blzee.regular.ttf);
 }
 
-.container {
+.home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,8 +52,8 @@ html {
 }
 
 .blog {
-  border-color: white;
-  border-style: solid;
+  /*border-color: white;
+  border-style: solid;*/
   margin-top: 50px;
   width: 5cm;
 }
@@ -112,26 +113,26 @@ html {
 }
 
 h1{
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
   font-family: squeaky-chalk;
 
 }
 
 h2 {
   font-family: squeaky-chawp;
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
 }
 
 h3 {
   font-family: squeaky-chawp;
   font-size: 22px;
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
 }
 
 p, pr {
   font-family: crayon;
   font-size: 20px;
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
 }
 
 .home-page {
@@ -139,15 +140,20 @@ p, pr {
   color: #4CBD7B;
 }
 
-footer {
-  font-size: 1.5em;
+footer p{
+  padding: 7rem;
+  font-size: 3rem;
 
 }
 footer p a{
   padding: 10px;
+  color: #4CBD7B;
 }
 
 a {
-  color: #9AE8D4;
+  color: #a2a2a2;
   font-family: kg-blank-space;
+}
+
+@media screen and (max-width: 550px) {
 }

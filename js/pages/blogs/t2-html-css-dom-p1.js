@@ -5,7 +5,7 @@ import { IndexLink, Link } from "react-router";
 export default class T2TechnicalBlogP1 extends React.Component{
   render(){
     return(
-      <div class="html-css-dom-content">
+      <div class="page-content">
         <Link to="/" class="home-page"><i class="fa fa-home fa-3x" aria-hidden="true"></i></Link>
         <div class="question-one">
           <h2>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h2>
