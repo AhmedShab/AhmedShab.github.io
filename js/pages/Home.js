@@ -3,9 +3,12 @@ import { IndexLink, Link } from "react-router";
 
 export default class Home extends React.Component{
   render(){
+    var myName = "Ahmed Shaaban";
+
     return(
       <div class="main-page-content">
-        <h1>My 19 weeks journey towards becoming a successful web developer: Ahmed Shaaban</h1>
+        {/*<img src="images/profile.jpg"></img>*/}
+        <h1>My 19 weeks journey towards becoming a successful web developer: {myName}</h1>
         <h3>This is my weekly blog that I will be sharing my experince toward working on becoming a successful web developer.</h3>
         <div class="blog">
           <h3>May 27, 2016</h3>
