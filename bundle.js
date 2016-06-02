@@ -26155,10 +26155,14 @@
 	          _react2.default.createElement("br", null),
 	          _react2.default.createElement("br", null)
 	        ),
-	        _react2.default.createElement("img", { src: "/images/wireframe-index-page-desktop.jpg", className: "img-responsive", alt: "" }),
-	        _react2.default.createElement("img", { src: "/images/wireframe-index-page-mobile.jpg", alt: "" }),
-	        _react2.default.createElement("img", { src: "/images/wireframe-blog-page-desktop.jpg", alt: "" }),
-	        _react2.default.createElement("img", { src: "/images/wireframe-blog-page-mobile.jpg", alt: "" }),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "c3-images-container" },
+	          _react2.default.createElement("img", { src: "/images/wireframe-index-page-desktop.jpg", className: "img-responsive c3-images", alt: "" }),
+	          _react2.default.createElement("img", { src: "/images/wireframe-index-page-mobile.jpg", className: "img-responsive c3-images", alt: "" }),
+	          _react2.default.createElement("img", { src: "/images/wireframe-blog-page-desktop.jpg", className: "img-responsive c3-images", alt: "" }),
+	          _react2.default.createElement("img", { src: "/images/wireframe-blog-page-mobile.jpg", className: "img-responsive c3-images", alt: "" })
+	        ),
 	        _react2.default.createElement(
 	          "h2",
 	          null,
