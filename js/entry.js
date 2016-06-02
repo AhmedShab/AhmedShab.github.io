@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute , browserHistory } from "react-router"
+import { Router, Route, IndexRoute, browserHistory } from "react-router"
+import { createBrowserHistory } from "history";
 
 import Home from "./pages/Home";
 import Layout from "./pages/Layout";
@@ -13,9 +14,8 @@ import T3DesignBlog from "./pages/blogs/t3-design-to-web-blog";
 import Template from "./pages/blogs/blog-template";
 
 const app = document.getElementById('app');
-
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={createBrowserHistory}>
     <Route path="/" component={Layout}>
       <IndexRoute component={Home}></IndexRoute>
       <Route path="blog/c1-reflection-blog" component={C1ReflectionBlog}></Route>
