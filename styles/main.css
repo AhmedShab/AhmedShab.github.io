@@ -66,6 +66,8 @@ body {
 }
 
 
+
+
 .reflaction-content{
   max-width: 50%;
 }
@@ -110,6 +112,18 @@ body {
 
 .t2-question-3 img {
   margin-left: 40%;
+}
+
+.c3-images-container {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+
+.c3-images {
+  margin: 1em;
+  width: 300px;
+  height: 300px;
 }
 
 h1{
