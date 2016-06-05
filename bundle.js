@@ -90,7 +90,11 @@
 
 	var _t3DesignToWebBlog2 = _interopRequireDefault(_t3DesignToWebBlog);
 
-	var _blogTemplate = __webpack_require__(251);
+	var _c3MeditationProcess = __webpack_require__(251);
+
+	var _c3MeditationProcess2 = _interopRequireDefault(_c3MeditationProcess);
+
+	var _blogTemplate = __webpack_require__(252);
 
 	var _blogTemplate2 = _interopRequireDefault(_blogTemplate);
 
@@ -110,6 +114,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t2-html-css-dom-p2", component: _t2HtmlCssDomP4.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c2-emotional-intelligence", component: _c2EmotionalIntelligence2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t3-design-to-web-blog", component: _t3DesignToWebBlog2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c3-meditation-process", component: _c3MeditationProcess2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/blog-template", component: _blogTemplate2.default })
 	  )
 	), app);
@@ -27168,6 +27173,20 @@
 	          _react2.default.createElement(
 	            "h3",
 	            null,
+	            "June 5, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c3-meditation-process" },
+	            "Meditation process blog"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
 	            "June 2, 2016"
 	          ),
 	          _react2.default.createElement(
@@ -28060,6 +28079,91 @@
 
 /***/ },
 /* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var C3MediationBlog = function (_React$Component) {
+	  _inherits(C3MediationBlog, _React$Component);
+
+	  function C3MediationBlog() {
+	    _classCallCheck(this, C3MediationBlog);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(C3MediationBlog).apply(this, arguments));
+	  }
+
+	  _createClass(C3MediationBlog, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "What did you think about mediation before reading chapter 2?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "A way to free your mind from any external thought."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "What new things have you learnt about mediation?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "How easily you can meditate everyday if you set a specific time for it everyday. After that, it will become more like a habit you have."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Did any of the suggested mediation techniques stand out to you?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Meditation posture seems interesting to me. I never tried it myself which is why I'm keen to try it when I can. In fact, I will organize a time once in the morning and practice it."
+	        )
+	      );
+	    }
+	  }]);
+
+	  return C3MediationBlog;
+	}(_react2.default.Component);
+
+	exports.default = C3MediationBlog;
+
+/***/ },
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
