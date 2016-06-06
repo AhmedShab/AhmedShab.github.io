@@ -94,7 +94,11 @@
 
 	var _c3MeditationProcess2 = _interopRequireDefault(_c3MeditationProcess);
 
-	var _blogTemplate = __webpack_require__(252);
+	var _t4JavascriptBasics = __webpack_require__(252);
+
+	var _t4JavascriptBasics2 = _interopRequireDefault(_t4JavascriptBasics);
+
+	var _blogTemplate = __webpack_require__(253);
 
 	var _blogTemplate2 = _interopRequireDefault(_blogTemplate);
 
@@ -115,6 +119,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c2-emotional-intelligence", component: _c2EmotionalIntelligence2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t3-design-to-web-blog", component: _t3DesignToWebBlog2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c3-meditation-process", component: _c3MeditationProcess2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t4-javascript-basics", component: _t4JavascriptBasics2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/blog-template", component: _blogTemplate2.default })
 	  )
 	), app);
@@ -27173,6 +27178,20 @@
 	          _react2.default.createElement(
 	            "h3",
 	            null,
+	            "June 7, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/t4-javascript-basics" },
+	            "Javascript basics blog"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
 	            "June 5, 2016"
 	          ),
 	          _react2.default.createElement(
@@ -28164,6 +28183,110 @@
 
 /***/ },
 /* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var T4JavascriptBasics = function (_React$Component) {
+	  _inherits(T4JavascriptBasics, _React$Component);
+
+	  function T4JavascriptBasics() {
+	    _classCallCheck(this, T4JavascriptBasics);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(T4JavascriptBasics).apply(this, arguments));
+	  }
+
+	  _createClass(T4JavascriptBasics, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "How does JavaScript compare to HTML and CSS?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Javascript would be connecting wires in your house to make (e.g) electricity works in your house. In that sense, it's more like hidden extra work to make your website more powerful"
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Explain control flow and loops using an example process from everyday life, for example 'waking up' or 'brushing your teeth'"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Let's say it is time for dinner and you have two options, order pizza or make what you have in your fridge. You decided to make dinner yourself so you do so. The next day you wanna do the same thing and you repeat that same procedure.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "That's exactly what IF/else statements, decide one thing over the other then proceed it. Loops are the procedure you repeat over and over. Sounds simple now does it?"
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Explain the difference between accessing data from arrays and object literals"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Arrays start from position 0 to access the first data and I would say it mainly store basic data.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "Whereas you can make objects more complicated with a bigger responsibility. However, in terms of data, we have to access to it from no particular order. We just need a reference to that object then get a data from it."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Explain what functions are and why they are useful"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Functions are simply a block of code that we can call over and over many times we want.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "You can produce the same result without having a function, but imagine if you need to have the same code over several places, what would you do? You will have to repeat that code all over the place. It takes time and doing that way is inconsistent. That's where the function can be useful, you can just make one function and use it anywhere you want. Saves you plenty of time and space in your editor"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return T4JavascriptBasics;
+	}(_react2.default.Component);
+
+	exports.default = T4JavascriptBasics;
+
+/***/ },
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
