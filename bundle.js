@@ -98,7 +98,11 @@
 
 	var _t4JavascriptBasics2 = _interopRequireDefault(_t4JavascriptBasics);
 
-	var _blogTemplate = __webpack_require__(253);
+	var _c4DailyMindfulness = __webpack_require__(253);
+
+	var _c4DailyMindfulness2 = _interopRequireDefault(_c4DailyMindfulness);
+
+	var _blogTemplate = __webpack_require__(254);
 
 	var _blogTemplate2 = _interopRequireDefault(_blogTemplate);
 
@@ -120,6 +124,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t3-design-to-web-blog", component: _t3DesignToWebBlog2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c3-meditation-process", component: _c3MeditationProcess2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t4-javascript-basics", component: _t4JavascriptBasics2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c4-daily-mindfulness", component: _c4DailyMindfulness2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/blog-template", component: _blogTemplate2.default })
 	  )
 	), app);
@@ -27178,6 +27183,20 @@
 	          _react2.default.createElement(
 	            "h3",
 	            null,
+	            "June 8, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c4-daily-mindfulness" },
+	            "Daily mindfulness blog"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
 	            "June 7, 2016"
 	          ),
 	          _react2.default.createElement(
@@ -28287,6 +28306,96 @@
 
 /***/ },
 /* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var C4DailyMindfulness = function (_React$Component) {
+	  _inherits(C4DailyMindfulness, _React$Component);
+
+	  function C4DailyMindfulness() {
+	    _classCallCheck(this, C4DailyMindfulness);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(C4DailyMindfulness).apply(this, arguments));
+	  }
+
+	  _createClass(C4DailyMindfulness, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "What did you learn from your 'mindfulness conversation'? How did the other person find it?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "There are three parts to it:",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "Listening: Listening to that person you're talking to without any distractions.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "Looping: After he/she is done talking, you have to demonstrate what you have listed.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "Dipping: Is checking with yourself and see if you're not distracted by internal distractions.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "I haven't had the chance to practice it myself, but it gave me some useful awareness of how I can improve my communication skills and that is something valuable to have."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Which of the three suggested techniques will you use to sustain your practice?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I think I going for 'do less then you can'. That doesn't mean I I'm not gonna accomplish my practice, it will help me more in the long run as I will do it regularly and keep it consistency. For example, I will keep practicing this week for 10 mins then expand it the week after.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "The important thing (as the author said) is that it doesn't become a burden to you. If that happened, there is no point of practicing it."
+	        )
+	      );
+	    }
+	  }]);
+
+	  return C4DailyMindfulness;
+	}(_react2.default.Component);
+
+	exports.default = C4DailyMindfulness;
+
+/***/ },
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
