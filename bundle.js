@@ -102,7 +102,11 @@
 
 	var _c4DailyMindfulness2 = _interopRequireDefault(_c4DailyMindfulness);
 
-	var _blogTemplate = __webpack_require__(254);
+	var _c5SelfConfidence = __webpack_require__(254);
+
+	var _c5SelfConfidence2 = _interopRequireDefault(_c5SelfConfidence);
+
+	var _blogTemplate = __webpack_require__(255);
 
 	var _blogTemplate2 = _interopRequireDefault(_blogTemplate);
 
@@ -125,6 +129,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c3-meditation-process", component: _c3MeditationProcess2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t4-javascript-basics", component: _t4JavascriptBasics2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c4-daily-mindfulness", component: _c4DailyMindfulness2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c5-self-confidence", component: _c5SelfConfidence2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/blog-template", component: _blogTemplate2.default })
 	  )
 	), app);
@@ -27165,7 +27170,7 @@
 
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "main-page-content" },
+	        { className: "main-page-content well" },
 	        _react2.default.createElement(
 	          "h1",
 	          null,
@@ -27176,6 +27181,20 @@
 	          "h3",
 	          null,
 	          "This is my weekly blog that I will be sharing my experince toward working on becoming a successful web developer."
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "June 15, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c5-self-confidence" },
+	            "Self Confidence blog"
+	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -28396,6 +28415,106 @@
 
 /***/ },
 /* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var C5SelfConfidence = function (_React$Component) {
+	  _inherits(C5SelfConfidence, _React$Component);
+
+	  function C5SelfConfidence() {
+	    _classCallCheck(this, C5SelfConfidence);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(C5SelfConfidence).apply(this, arguments));
+	  }
+
+	  _createClass(C5SelfConfidence, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "What is the relationship between mindfulness and self awareness?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Mindfulness is more like being aware of your true self. Accepting your mental state but can change it if you don't like your behavior.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "Self awareness is knowing your own personal state, that could be a state of your preferences, resources and institutions.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "Therefore, I would say mindfulness and self awareness are kinda the same but mindfulness is more about your own self, your emotion, behavior and so on. Being self aware is acknowledging your personal state but not changing your behavior."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Try at least one of the self awareness practices from the chapter (Body Scan, Journaling). What was your experience of it? How did you feel?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Before I answer this question, one of my best friends gave me a notebook tp write a journal about myself every night. I promised him to do it when I feel like it. I has been over 6 months and I never wrote a single thing.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "Coming back to this question, it felt very emotional. I don't usually write anything to myself, or even think about my own self and my needs. I suppose I always focus on trying to help out my friends but don't take the time to say what I feel in a paper.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "I want to start using the gift that my friend gave me. Even if I could do it once a week."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "What did you take away from the \"My Emotions are Not Me\" section?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I experienced enjoyment from reading that section. It opened up my mind and made me more aware of how we can alternate emotions easily. You could have a bad day but at the same time, you can also turn it into one of the best days.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "An analogy of passing clouds in the sky is extremely powerful. It cleared things for me and I feel like I can apply this in my everyday life."
+	        )
+	      );
+	    }
+	  }]);
+
+	  return C5SelfConfidence;
+	}(_react2.default.Component);
+
+	exports.default = C5SelfConfidence;
+
+/***/ },
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

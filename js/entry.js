@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute, browserHistory } from "react-router"
+import { Router, Route, IndexRoute, browserHistory } from "react-router";
 import { createBrowserHistory } from "history";
 
 import Home from "./pages/Home";
@@ -14,6 +14,7 @@ import T3DesignBlog from "./pages/blogs/t3-design-to-web-blog";
 import C3MediationBlog from "./pages/blogs/c3-meditation-process";
 import T4JavascriptBasics from "./pages/blogs/t4-javascript-basics";
 import C4DailyMindfulness from "./pages/blogs/c4-daily-mindfulness";
+import C5SelfConfidence from "./pages/blogs/c5-self-confidence";
 import Template from "./pages/blogs/blog-template";
 
 const app = document.getElementById('app');
@@ -30,6 +31,7 @@ ReactDOM.render(
       <Route path="blog/c3-meditation-process" component={C3MediationBlog}></Route>
       <Route path="blog/t4-javascript-basics" component={T4JavascriptBasics}></Route>
       <Route path="blog/c4-daily-mindfulness" component={C4DailyMindfulness}></Route>
+      <Route path="blog/c5-self-confidence" component={C5SelfConfidence}></Route>
       <Route path="blog/blog-template" component={Template}></Route>
     </Route>
   </Router>,
