@@ -98,15 +98,19 @@
 
 	var _t4JavascriptBasics2 = _interopRequireDefault(_t4JavascriptBasics);
 
-	var _c4DailyMindfulness = __webpack_require__(253);
+	var _t5ProblemSolving = __webpack_require__(253);
+
+	var _t5ProblemSolving2 = _interopRequireDefault(_t5ProblemSolving);
+
+	var _c4DailyMindfulness = __webpack_require__(254);
 
 	var _c4DailyMindfulness2 = _interopRequireDefault(_c4DailyMindfulness);
 
-	var _c5SelfConfidence = __webpack_require__(254);
+	var _c5SelfConfidence = __webpack_require__(255);
 
 	var _c5SelfConfidence2 = _interopRequireDefault(_c5SelfConfidence);
 
-	var _blogTemplate = __webpack_require__(255);
+	var _blogTemplate = __webpack_require__(256);
 
 	var _blogTemplate2 = _interopRequireDefault(_blogTemplate);
 
@@ -128,6 +132,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t3-design-to-web-blog", component: _t3DesignToWebBlog2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c3-meditation-process", component: _c3MeditationProcess2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t4-javascript-basics", component: _t4JavascriptBasics2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t5-problem-solving", component: _t5ProblemSolving2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c4-daily-mindfulness", component: _c4DailyMindfulness2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c5-self-confidence", component: _c5SelfConfidence2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/blog-template", component: _blogTemplate2.default })
@@ -27192,6 +27197,12 @@
 	          ),
 	          _react2.default.createElement(
 	            _reactRouter.Link,
+	            { to: "blog/t5-problem-solving" },
+	            "Problem Solving blog"
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
 	            { to: "blog/c5-self-confidence" },
 	            "Self Confidence blog"
 	          )
@@ -28349,6 +28360,249 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var T5ProblemSolving = function (_React$Component) {
+	  _inherits(T5ProblemSolving, _React$Component);
+
+	  function T5ProblemSolving() {
+	    _classCallCheck(this, T5ProblemSolving);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(T5ProblemSolving).apply(this, arguments));
+	  }
+
+	  _createClass(T5ProblemSolving, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Have you ever got blocked on a simple problem? Solved a problem in an elegant way"
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "What was the problem?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I experienced lots of problems throughout my programming learning. Recently, I was working on a backend challenge (freecodecamp) so we were asked to write api (url root path) that takes a website then makes a short version of that site. E.g https://www.google.com generate 123 then redirect you to google.com.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          "I was having trouble getting the original url request (https://www.exaple.com) and display it on the website."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "What problem solving techniques did you use?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I looked over my code, tried to analyze the problem by printing what is request itself. For example, when a user goes to my site, it will show what url they typed in. From there, all I had to do is select that request and display it on my page."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "How did you feel throughout the process?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "It was a little stressful, any problem solving is hard but we do it everyday in different forms. When I finally solved it, it felt very rewarding. Such a wonderful feeling haha."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "What did you learn?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Never give up. It can be hard sometimes, but you have to keep going. Doing that everyday will help you improving your problem solving skills and will benefit a lot from it in the long run."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Reflect on how confident you feel using the problem solving techniques and process:"
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Pseudocode"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I have to be honest, I don't usually write pseudocode unless I work with someone and want to show them what I mean in a simple format."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Is writing "
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "If you're talking about code, no matter how experienced you are there always will be a part of a code you don't understand. I feel confident enough though to write what I want to achieve."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Trying something"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I aways do that when I'm not sure if my code is right. Trying things out is one of the best practice in programming. You won't know what's happening until you try it out."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Rubber ducky method"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "It's an interesting way to explain your program to yourself and see if you can actually explain it to someone. I normally think about how my program works in my mine. I sometimes face problems if I want to explain my code to someone. Applying the rubber ducky method could be very valuable to improve on that."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Reading error messages"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "It can be easy and hard at the same time. In javascript, error messages are not the most helpful comparing to other languages but it gets easier as I face them everyday."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Console.logging"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "One of the best methods I use to debug my code. To know what I'm doing and if I'm doing it correctly, I have to use it in my debugging process."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Googling"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I give myself a timeframe, If I get stuck for too long then I google my problem and try to work it out."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Asking your peers for help"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "That's important as well, I didn't have a chance yet to ask for help but will definitely do in the future."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Asking coaches for help"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Same as my previous answer. Will do that more often in the soon future."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Improving your process with reflection"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "It's important to me as that way I can improve myself and fix my problems easily, and next time I face them I will know what to do."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Describe what these functions do in your own words:"
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          ".map()"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Taking one array, manipulate it and that will produce a new array."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          ".filter()"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Taking one array, manipulate it but this time, the function it takes return true if it passes that function and false if not. The new array will contain the elements that passed the test of that function."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          ".reduce()"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "A function that takes an array and reduces it to produce one result. For example, we can have an array with four elements and we want to add one with another."
+	        )
+	      );
+	    }
+	  }]);
+
+	  return T5ProblemSolving;
+	}(_react2.default.Component);
+
+	exports.default = T5ProblemSolving;
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var C4DailyMindfulness = function (_React$Component) {
 	  _inherits(C4DailyMindfulness, _React$Component);
 
@@ -28414,7 +28668,7 @@
 	exports.default = C4DailyMindfulness;
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28514,7 +28768,7 @@
 	exports.default = C5SelfConfidence;
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
