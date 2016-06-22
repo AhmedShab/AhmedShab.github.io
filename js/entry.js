@@ -14,6 +14,7 @@ import T3DesignBlog from "./pages/blogs/t3-design-to-web-blog";
 import C3MediationBlog from "./pages/blogs/c3-meditation-process";
 import T4JavascriptBasics from "./pages/blogs/t4-javascript-basics";
 import T5ProblemSolving from "./pages/blogs/t5-problem-solving";
+import T6Js from "./pages/blogs/t6-js-language";
 import C4DailyMindfulness from "./pages/blogs/c4-daily-mindfulness";
 import C5SelfConfidence from "./pages/blogs/c5-self-confidence";
 import C6Control from "./pages/blogs/c6-control";
@@ -33,6 +34,7 @@ ReactDOM.render(
       <Route path="blog/c3-meditation-process" component={C3MediationBlog}></Route>
       <Route path="blog/t4-javascript-basics" component={T4JavascriptBasics}></Route>
       <Route path="blog/t5-problem-solving" component={T5ProblemSolving}></Route>
+      <Route path="blog/t6-js-language" component={T6Js}></Route>
       <Route path="blog/c4-daily-mindfulness" component={C4DailyMindfulness}></Route>
       <Route path="blog/c5-self-confidence" component={C5SelfConfidence}></Route>
       <Route path="blog/c6-control" component={C6Control}></Route>

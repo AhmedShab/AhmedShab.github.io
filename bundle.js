@@ -102,19 +102,23 @@
 
 	var _t5ProblemSolving2 = _interopRequireDefault(_t5ProblemSolving);
 
-	var _c4DailyMindfulness = __webpack_require__(254);
+	var _t6JsLanguage = __webpack_require__(254);
+
+	var _t6JsLanguage2 = _interopRequireDefault(_t6JsLanguage);
+
+	var _c4DailyMindfulness = __webpack_require__(255);
 
 	var _c4DailyMindfulness2 = _interopRequireDefault(_c4DailyMindfulness);
 
-	var _c5SelfConfidence = __webpack_require__(255);
+	var _c5SelfConfidence = __webpack_require__(256);
 
 	var _c5SelfConfidence2 = _interopRequireDefault(_c5SelfConfidence);
 
-	var _c6Control = __webpack_require__(256);
+	var _c6Control = __webpack_require__(257);
 
 	var _c6Control2 = _interopRequireDefault(_c6Control);
 
-	var _blogTemplate = __webpack_require__(257);
+	var _blogTemplate = __webpack_require__(258);
 
 	var _blogTemplate2 = _interopRequireDefault(_blogTemplate);
 
@@ -137,6 +141,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c3-meditation-process", component: _c3MeditationProcess2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t4-javascript-basics", component: _t4JavascriptBasics2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t5-problem-solving", component: _t5ProblemSolving2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t6-js-language", component: _t6JsLanguage2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c4-daily-mindfulness", component: _c4DailyMindfulness2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c5-self-confidence", component: _c5SelfConfidence2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c6-control", component: _c6Control2.default }),
@@ -27202,8 +27207,8 @@
 	          ),
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: "blog/t5-problem-solving" },
-	            "Control blog"
+	            { to: "blog/t6-js-language" },
+	            "JavaScript language blog"
 	          ),
 	          _react2.default.createElement("br", null),
 	          _react2.default.createElement(
@@ -28628,6 +28633,130 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var T6Js = function (_React$Component) {
+	  _inherits(T6Js, _React$Component);
+
+	  function T6Js() {
+	    _classCallCheck(this, T6Js);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(T6Js).apply(this, arguments));
+	  }
+
+	  _createClass(T6Js, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "In the JavaScript language, describe all the use cases for each of:"
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "parentheses () - e.g. '1. Execute a function var result = doSomething()'"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "parentheses in javascript are going to a function and execute its block of code then it go back again to where it was. E.g if I have a function called ",
+	          _react2.default.createElement(
+	            "code",
+	            null,
+	            "greeting()"
+	          ),
+	          ", it executes the block of greeting code then return to the ",
+	          _react2.default.createElement(
+	            "code",
+	            null,
+	            "greeting()"
+	          ),
+	          " line. It can also be used to group expressions. E.g ",
+	          _react2.default.createElement(
+	            "code",
+	            null,
+	            "(1 + 3) * 4 = 16"
+	          ),
+	          "."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "brackets []"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "This can be used to create arrays. I can create an array such as ",
+	          _react2.default.createElement(
+	            "code",
+	            null,
+	            "var greeting = []"
+	          ),
+	          " and add what I need to that array."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "braces "
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Can be used for defining where a function, condition or object starting and ending points"
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          " single quotes '' and double quotes \"\""
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "They are the same thing. Basically creating a string in javascript, you would use one of the two."
+	        )
+	      );
+	    }
+	  }]);
+
+	  return T6Js;
+	}(_react2.default.Component);
+
+	exports.default = T6Js;
+
+/***/ },
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var C4DailyMindfulness = function (_React$Component) {
 	  _inherits(C4DailyMindfulness, _React$Component);
 
@@ -28693,7 +28822,7 @@
 	exports.default = C4DailyMindfulness;
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28793,7 +28922,7 @@
 	exports.default = C5SelfConfidence;
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28943,7 +29072,7 @@
 	exports.default = C6Control;
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
