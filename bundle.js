@@ -110,7 +110,11 @@
 
 	var _c5SelfConfidence2 = _interopRequireDefault(_c5SelfConfidence);
 
-	var _blogTemplate = __webpack_require__(256);
+	var _c6Control = __webpack_require__(256);
+
+	var _c6Control2 = _interopRequireDefault(_c6Control);
+
+	var _blogTemplate = __webpack_require__(257);
 
 	var _blogTemplate2 = _interopRequireDefault(_blogTemplate);
 
@@ -135,6 +139,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/t5-problem-solving", component: _t5ProblemSolving2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c4-daily-mindfulness", component: _c4DailyMindfulness2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c5-self-confidence", component: _c5SelfConfidence2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "blog/c6-control", component: _c6Control2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "blog/blog-template", component: _blogTemplate2.default })
 	  )
 	), app);
@@ -27193,6 +27198,26 @@
 	          _react2.default.createElement(
 	            "h3",
 	            null,
+	            "June 23, 2016"
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/t5-problem-solving" },
+	            "Control blog"
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "blog/c6-control" },
+	            "Control blog"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "blog" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
 	            "June 15, 2016"
 	          ),
 	          _react2.default.createElement(
@@ -28769,6 +28794,156 @@
 
 /***/ },
 /* 256 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var C6Control = function (_React$Component) {
+	  _inherits(C6Control, _React$Component);
+
+	  function C6Control() {
+	    _classCallCheck(this, C6Control);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(C6Control).apply(this, arguments));
+	  }
+
+	  _createClass(C6Control, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "page-content" },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: "/", className: "home-page" },
+	          _react2.default.createElement("i", { className: "fa fa-home fa-3x", "aria-hidden": "true" })
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "What learnings did you take from the chapter?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Chapter 5's title is \"Riding Your Emotion like a Horse\", that to me means we have to try to control our emotions rather than it controls us.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null)
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "There a lot of good parts to take from this chapter, one of them is the four general principles for dealing with distress.",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null)
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          _react2.default.createElement(
+	            "b",
+	            null,
+	            "1. Know when you are not in pain."
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "b",
+	            null,
+	            "2. Do not feel bad about feeling bad."
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "b",
+	            null,
+	            "3. Do not feed the monster."
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "b",
+	            null,
+	            "4. Start every thought with kindness and humor."
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null)
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "I have to also mention the \"Siberian North Railroad\" method for dealing with triggers. That is doing these five steps:",
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null)
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          _react2.default.createElement(
+	            "b",
+	            null,
+	            "1. Stop "
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "b",
+	            null,
+	            "2. Breathe"
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "b",
+	            null,
+	            "3. Notice"
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "b",
+	            null,
+	            "5. Respond"
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null)
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Overall, we have to do our best by not letting our emotion getting in our way. If we can control our emotions, we can achieve amazing things in our life."
+	        )
+	      );
+	    }
+	  }]);
+
+	  return C6Control;
+	}(_react2.default.Component);
+
+	exports.default = C6Control;
+
+/***/ },
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

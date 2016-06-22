@@ -11,6 +11,11 @@ export default class Home extends React.Component{
         <h1>My 19 weeks journey towards becoming a successful web developer: {myName}</h1>
         <h3>This is my weekly blog that I will be sharing my experince toward working on becoming a successful web developer.</h3>
         <div class="blog">
+          <h3>June 23, 2016</h3>
+          <Link to="blog/t5-problem-solving">Control blog</Link><br/>
+          <Link to="blog/c6-control">Control blog</Link>
+        </div>
+        <div class="blog">
           <h3>June 15, 2016</h3>
           <Link to="blog/t5-problem-solving">Problem Solving blog</Link><br/>
           <Link to="blog/c5-self-confidence">Self Confidence blog</Link>

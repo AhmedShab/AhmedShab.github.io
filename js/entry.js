@@ -16,6 +16,7 @@ import T4JavascriptBasics from "./pages/blogs/t4-javascript-basics";
 import T5ProblemSolving from "./pages/blogs/t5-problem-solving";
 import C4DailyMindfulness from "./pages/blogs/c4-daily-mindfulness";
 import C5SelfConfidence from "./pages/blogs/c5-self-confidence";
+import C6Control from "./pages/blogs/c6-control";
 import Template from "./pages/blogs/blog-template";
 
 const app = document.getElementById('app');
@@ -34,6 +35,7 @@ ReactDOM.render(
       <Route path="blog/t5-problem-solving" component={T5ProblemSolving}></Route>
       <Route path="blog/c4-daily-mindfulness" component={C4DailyMindfulness}></Route>
       <Route path="blog/c5-self-confidence" component={C5SelfConfidence}></Route>
+      <Route path="blog/c6-control" component={C6Control}></Route>
       <Route path="blog/blog-template" component={Template}></Route>
     </Route>
   </Router>,
